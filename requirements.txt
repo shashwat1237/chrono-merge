@@ -1,0 +1,14 @@
+# Core NLP & Embeddings
+# NOTE: Pretrained weights for sentence-transformers ('all-MiniLM-L6-v2') must be
+# downloaded/cached during initial environment setup before running in offline/airgapped mode.
+medspacy==1.3.1
+sentence-transformers==2.7.0
+scikit-learn==1.9.0
+dateparser==1.4.3
+numpy>=1.26.0
+
+# Structured Output & LLM Auditing
+pydantic==2.13.4
+instructor==1.17.0
+groq==1.6.0
+python-dotenv==1.0.1
