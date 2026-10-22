@@ -1,0 +1,787 @@
+[
+  {
+    "case_id": "TC_RETRO_01_MULTI_DAY_RETROSPECTIVE_REVIEW",
+    "resident_id": "RES_101",
+    "case_family": "Retrospective_References",
+    "description": "Fall occurs Monday afternoon; followed up Tuesday morning and reviewed in care plan on Wednesday.",
+    "notes": [
+      {
+        "note_id": "NR101",
+        "resident_id": "RES_101",
+        "timestamp": "2026-11-10T14:15:00",
+        "text": "Resident found on floor in dining hall at 14:00. Transfer belt applied, assisted by two staff.",
+        "gold_cluster_id": "INC_R01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NR102",
+        "resident_id": "RES_101",
+        "timestamp": "2026-11-10T14:45:00",
+        "text": "Post-fall assessment completed for dining hall fall. Vital signs stable, no hematoma or laceration.",
+        "gold_cluster_id": "INC_R01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NR103",
+        "resident_id": "RES_101",
+        "timestamp": "2026-11-11T09:00:00",
+        "text": "Reviewed yesterday's dining room fall with physical therapist. Gait instability noted.",
+        "gold_cluster_id": "INC_R01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NR104",
+        "resident_id": "RES_101",
+        "timestamp": "2026-11-12T10:30:00",
+        "text": "Interdisciplinary care plan meeting: reviewed fall earlier this week. Low bed and motion sensor ordered.",
+        "gold_cluster_id": "INC_R01",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_R01": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment completed"
+      }
+    }
+  },
+  {
+    "case_id": "TC_PERIOD_01_NO_FURTHER_FALLS_MONITORING",
+    "resident_id": "RES_102",
+    "case_family": "Negative_Period_Statements",
+    "description": "Overnight fall followed by periodic monitoring confirms no further incidents.",
+    "notes": [
+      {
+        "note_id": "NP101",
+        "resident_id": "RES_102",
+        "timestamp": "2026-11-13T02:15:00",
+        "text": "Resident found sitting on floor beside bed at approx 0200. Call light was unplugged.",
+        "gold_cluster_id": "INC_P01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NP102",
+        "resident_id": "RES_102",
+        "timestamp": "2026-11-13T02:40:00",
+        "text": "Post-fall assessment completed: resident denies pain, alert and oriented x 4.",
+        "gold_cluster_id": "INC_P01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NP103",
+        "resident_id": "RES_102",
+        "timestamp": "2026-11-13T05:00:00",
+        "text": "Hourly safety rounding conducted. Resident sleeping quietly in bed. No further falls noted overnight.",
+        "gold_cluster_id": "INC_P01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NP104",
+        "resident_id": "RES_102",
+        "timestamp": "2026-11-13T07:00:00",
+        "text": "Morning shift report: no additional falls or balance loss during shift since 0200 incident.",
+        "gold_cluster_id": "INC_P01",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_P01": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment completed"
+      }
+    }
+  },
+  {
+    "case_id": "TC_CONFLICT_01_WITNESSED_AND_HEAD_STRIKE_DISPUTE",
+    "resident_id": "RES_103",
+    "case_family": "Clinical_Contradictions",
+    "description": "CNA and Nurse disagree on whether fall was witnessed and whether resident struck head.",
+    "notes": [
+      {
+        "note_id": "NCF101",
+        "resident_id": "RES_103",
+        "timestamp": "2026-11-14T11:20:00",
+        "text": "CNA report: Resident slipped and fell in bathroom at 11:00. Unwitnessed. Resident states she hit back of head.",
+        "gold_cluster_id": "INC_CF01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NCF102",
+        "resident_id": "RES_103",
+        "timestamp": "2026-11-14T11:50:00",
+        "text": "RN evaluation: Clarification\u2014fall was witnessed by dietary aide. Resident explicitly denies hitting head. Zero hematoma, pupils equal.",
+        "gold_cluster_id": "INC_CF01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NCF103",
+        "resident_id": "RES_103",
+        "timestamp": "2026-11-14T12:30:00",
+        "text": "Post-fall neurological check recorded: vital signs stable, GCS 15. Contradiction regarding head trauma documented for MD review.",
+        "gold_cluster_id": "INC_CF01",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_CF01": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall neurological check recorded"
+      }
+    }
+  },
+  {
+    "case_id": "TC_RESIDENT_01_ROOMMATE_CROSS_CONTAMINATION",
+    "resident_id": "MULTI_ROOM_204",
+    "case_family": "Multi_Resident_Separation",
+    "description": "Two residents in Room 204. Resident A falls at 03:00; Resident B ambulates without incident at 03:15.",
+    "notes": [
+      {
+        "note_id": "NM101",
+        "resident_id": "RES_ALICE",
+        "timestamp": "2026-11-15T03:10:00",
+        "text": "Room 204 Bed A: Resident Alice found sitting on floor beside bed at 03:00. RN notified.",
+        "gold_cluster_id": "INC_M01_ALICE",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NM102",
+        "resident_id": "RES_ALICE",
+        "timestamp": "2026-11-15T03:30:00",
+        "text": "Room 204 Bed A: Post-fall assessment completed for Alice. Denies pain, ROM intact.",
+        "gold_cluster_id": "INC_M01_ALICE",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NM103",
+        "resident_id": "RES_BETTY",
+        "timestamp": "2026-11-15T03:45:00",
+        "text": "Room 204 Bed B: Roommate Betty awake and asking for water. Assisted to bathroom, ambulated safely with walker. No fall.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false
+      },
+      {
+        "note_id": "NM104",
+        "resident_id": "RES_BETTY",
+        "timestamp": "2026-11-15T10:00:00",
+        "text": "Room 204 Bed B: Betty tripped over footstool at 09:45 and fell to carpeted floor. New incident initiated.",
+        "gold_cluster_id": "INC_M02_BETTY",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_M01_ALICE": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment completed for Alice"
+      },
+      "INC_M02_BETTY": {
+        "expected_evidence_found": false,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": null
+      }
+    }
+  },
+  {
+    "case_id": "TC_NOISE_01_EMBEDDED_INCIDENT_IN_ROUTINE_CARE",
+    "resident_id": "RES_104",
+    "case_family": "High_Noise_Environment",
+    "description": "Routine shift logs (meals, medication, physical therapy) surrounding a single fall at 15:30.",
+    "notes": [
+      {
+        "note_id": "NN101",
+        "resident_id": "RES_104",
+        "timestamp": "2026-11-16T08:00:00",
+        "text": "Morning medications administered with applesauce. Tolerated well. Vital signs: BP 122/80.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false
+      },
+      {
+        "note_id": "NN102",
+        "resident_id": "RES_104",
+        "timestamp": "2026-11-16T12:00:00",
+        "text": "Lunch tray served. Resident consumed 75% of meal. Voided x 1 in toilet with assist.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false
+      },
+      {
+        "note_id": "NN103",
+        "resident_id": "RES_104",
+        "timestamp": "2026-11-16T15:45:00",
+        "text": "Resident fell in hallway near elevator at 15:30 while walking unassisted. Slipped on clean dry floor.",
+        "gold_cluster_id": "INC_N01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NN104",
+        "resident_id": "RES_104",
+        "timestamp": "2026-11-16T16:10:00",
+        "text": "Comprehensive post-fall assessment completed: vitals stable, bilateral extremities checked, zero head trauma.",
+        "gold_cluster_id": "INC_N01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NN105",
+        "resident_id": "RES_104",
+        "timestamp": "2026-11-16T18:00:00",
+        "text": "Dinner tray delivered. Resident resting comfortably in armchair. Ice pack applied to bruised knee as ordered.",
+        "gold_cluster_id": "INC_N01",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_N01": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Comprehensive post-fall assessment completed"
+      }
+    }
+  },
+  {
+    "case_id": "TC_A01_TRI_SHIFT_FALL_PROGRESSION",
+    "resident_id": "RES_A01",
+    "case_family": "A_Standard_Duplicates",
+    "description": "Single overnight fall with 5 notes logged across CNA, Night RN, Day Charge Nurse, and MD review.",
+    "notes": [
+      {
+        "note_id": "NA101",
+        "resident_id": "RES_A01",
+        "timestamp": "2026-10-20T03:15:00",
+        "text": "Resident found sitting on floor beside bed at approx 0300. Call bell was not within reach. CNA notified charge RN.",
+        "gold_cluster_id": "INC_A01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NA102",
+        "resident_id": "RES_A01",
+        "timestamp": "2026-10-20T03:35:00",
+        "text": "Post-fall assessment completed for 0300 fall. Resident denies head strike or pain. Assisted back to bed via safe mechanical transfer.",
+        "gold_cluster_id": "INC_A01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NA103",
+        "resident_id": "RES_A01",
+        "timestamp": "2026-10-20T04:30:00",
+        "text": "Neuro check recorded following 0300 incident. Vitals: BP 128/78, HR 72. Pupils equal and reactive.",
+        "gold_cluster_id": "INC_A01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NA104",
+        "resident_id": "RES_A01",
+        "timestamp": "2026-10-20T07:15:00",
+        "text": "Shift handover: Day shift briefed on resident's overnight fall near bed. Continued 15-minute safety monitoring in place.",
+        "gold_cluster_id": "INC_A01",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NA105",
+        "resident_id": "RES_A01",
+        "timestamp": "2026-10-20T11:00:00",
+        "text": "Attending physician visited to evaluate resident following early morning fall. ROM full in all extremities, zero neurological deficits.",
+        "gold_cluster_id": "INC_A01",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_A01": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment completed for 0300 fall"
+      }
+    }
+  },
+  {
+    "case_id": "TC_B01_SAME_DAY_MORNING_AND_EVENING_FALLS",
+    "resident_id": "RES_B01",
+    "case_family": "B_Temporal_Proximity",
+    "description": "Resident experiences two separate falls on the same day: one at 06:15 and a second at 18:30.",
+    "notes": [
+      {
+        "note_id": "NB101",
+        "resident_id": "RES_B01",
+        "timestamp": "2026-10-23T06:30:00",
+        "text": "Resident found sitting on floor beside bed at 06:15. Stated slippers caught on rug.",
+        "gold_cluster_id": "INC_B01_1",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NB102",
+        "resident_id": "RES_B01",
+        "timestamp": "2026-10-23T07:00:00",
+        "text": "Post-fall assessment completed for 0615 bedside fall. Resident uninjured.",
+        "gold_cluster_id": "INC_B01_1",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NB103",
+        "resident_id": "RES_B01",
+        "timestamp": "2026-10-23T18:45:00",
+        "text": "Resident fell near dining room corridor at 18:30 during dinner transport. Assisted by dietary aide. New incident report opened.",
+        "gold_cluster_id": "INC_B01_2",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NB104",
+        "resident_id": "RES_B01",
+        "timestamp": "2026-10-23T19:15:00",
+        "text": "Post-fall assessment and neuro check recorded for evening dining room incident. Ice pack applied to left wrist.",
+        "gold_cluster_id": "INC_B01_2",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_B01_1": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment completed for 0615 bedside fall"
+      },
+      "INC_B01_2": {
+        "expected_evidence_found": true,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": "Post-fall assessment and neuro check recorded"
+      }
+    }
+  },
+  {
+    "case_id": "TC_E02_MISSING_ASSESSMENT_EVIDENCE",
+    "resident_id": "RES_E02",
+    "case_family": "E_Follow_Up_Evidence",
+    "description": "Incident reported but no post-fall assessment or neurological check documented.",
+    "notes": [
+      {
+        "note_id": "NE201",
+        "resident_id": "RES_E02",
+        "timestamp": "2026-11-02T16:20:00",
+        "text": "Resident found on floor near lounge chair at 16:00. Assisted back to chair by nursing assistant.",
+        "gold_cluster_id": "INC_E02",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NE202",
+        "resident_id": "RES_E02",
+        "timestamp": "2026-11-02T17:00:00",
+        "text": "Resident resting in chair watching television. Dinner tray served.",
+        "gold_cluster_id": "INC_E02",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_E02": {
+        "expected_evidence_found": false,
+        "expected_uncertainty_flag": false,
+        "required_quote_substring": null
+      }
+    }
+  },
+  {
+    "case_id": "TC_E04_VAGUE_ASSESSMENT_UNCERTAINTY",
+    "resident_id": "RES_E04",
+    "case_family": "E_Follow_Up_Evidence",
+    "description": "Assessment noted ambiguously without details ('Resident checked after fall, seemed ok').",
+    "notes": [
+      {
+        "note_id": "NE401",
+        "resident_id": "RES_E04",
+        "timestamp": "2026-11-04T12:10:00",
+        "text": "Resident slipped and fell in physical therapy room at 12:00.",
+        "gold_cluster_id": "INC_E04",
+        "gold_is_incident": true
+      },
+      {
+        "note_id": "NE402",
+        "resident_id": "RES_E04",
+        "timestamp": "2026-11-04T12:50:00",
+        "text": "Staff looked over resident after fall, appeared uninjured, returned to room.",
+        "gold_cluster_id": "INC_E04",
+        "gold_is_incident": true
+      }
+    ],
+    "gold_evidence_validation": {
+      "INC_E04": {
+        "expected_evidence_found": false,
+        "expected_uncertainty_flag": true,
+        "required_quote_substring": "Staff looked over resident after fall"
+      }
+    }
+  },
+  {
+    "case_id": "TC_A02_BATHROOM_SLIP_FOLLOWUP",
+    "case_family": "A_Standard_Duplicates",
+    "description": "Bathroom slip with delayed incident documentation and late administrative filing.",
+    "notes": [
+      {
+        "note_id": "NA201",
+        "timestamp": "2026-10-21T09:10:00",
+        "text": "Resident slipped on wet bathroom tile at approx 08:50 while ambulating unassisted. Slipped and fell to knees.",
+        "gold_cluster_id": "INC_A02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A02_B"
+      },
+      {
+        "note_id": "NA202",
+        "timestamp": "2026-10-21T09:30:00",
+        "text": "Comprehensive post-fall assessment completed: bilateral knees examined, slight erythema left patella, no hematoma.",
+        "gold_cluster_id": "INC_A02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A02_B"
+      },
+      {
+        "note_id": "NA203",
+        "timestamp": "2026-10-21T14:00:00",
+        "text": "Formal incident report filed for morning bathroom slip. Maintenance notified regarding leaking plumbing.",
+        "gold_cluster_id": "INC_A02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A02_B"
+      }
+    ],
+    "resident_id": "RES_TC_A02_B"
+  },
+  {
+    "case_id": "TC_A03_PATIO_FALL_CONCURRENT_OBS",
+    "case_family": "A_Standard_Duplicates",
+    "description": "Outdoor patio fall witnessed by activity staff and followed up by nursing.",
+    "notes": [
+      {
+        "note_id": "NA301",
+        "timestamp": "2026-10-22T14:15:00",
+        "text": "Activity coordinator reports resident tripped over walkway curb in garden patio at 14:00. Fell onto grassy surface.",
+        "gold_cluster_id": "INC_A03",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A03_P"
+      },
+      {
+        "note_id": "NA302",
+        "timestamp": "2026-10-22T14:40:00",
+        "text": "Post-fall assessment executed by floor nurse. Resident alert, oriented x 3. Denies dizziness prior to fall.",
+        "gold_cluster_id": "INC_A03",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A03_P"
+      },
+      {
+        "note_id": "NA303",
+        "timestamp": "2026-10-22T16:00:00",
+        "text": "Family notified via telephone regarding patio fall. Daughter updated on vital signs and absence of injury.",
+        "gold_cluster_id": "INC_A03",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_A03_P"
+      }
+    ],
+    "resident_id": "RES_TC_A03_P"
+  },
+  {
+    "case_id": "TC_B02_CONSECUTIVE_DAYS_DIFFERENT_LOCATIONS",
+    "case_family": "B_Temporal_Proximity",
+    "description": "Three falls across 48 hours in distinct locations (lounge, bedroom, hallway).",
+    "notes": [
+      {
+        "note_id": "NB201",
+        "timestamp": "2026-10-24T10:30:00",
+        "text": "Resident lost balance in TV lounge and slipped to floor at approx 10:15.",
+        "gold_cluster_id": "INC_B02_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      },
+      {
+        "note_id": "NB202",
+        "timestamp": "2026-10-24T11:00:00",
+        "text": "Post-fall assessment completed for lounge incident. Range of motion intact.",
+        "gold_cluster_id": "INC_B02_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      },
+      {
+        "note_id": "NB203",
+        "timestamp": "2026-10-25T02:30:00",
+        "text": "Night shift reports resident found lying on floor beside bed at 02:00.",
+        "gold_cluster_id": "INC_B02_2",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      },
+      {
+        "note_id": "NB204",
+        "timestamp": "2026-10-25T03:00:00",
+        "text": "Post-fall neurological check recorded for overnight fall. No distress.",
+        "gold_cluster_id": "INC_B02_2",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      },
+      {
+        "note_id": "NB205",
+        "timestamp": "2026-10-25T16:15:00",
+        "text": "Resident fell in main hallway near elevator at 16:00. Unwitnessed.",
+        "gold_cluster_id": "INC_B02_3",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      },
+      {
+        "note_id": "NB206",
+        "timestamp": "2026-10-25T16:45:00",
+        "text": "Post-fall assessment completed for afternoon hallway event. Skin tear dressed on right forearm.",
+        "gold_cluster_id": "INC_B02_3",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B02_C"
+      }
+    ],
+    "resident_id": "RES_TC_B02_C"
+  },
+  {
+    "case_id": "TC_B03_SHORT_INTERVAL_RECURRENCE",
+    "case_family": "B_Temporal_Proximity",
+    "description": "Two distinct falls within 5 hours of each other on the same shift.",
+    "notes": [
+      {
+        "note_id": "NB301",
+        "timestamp": "2026-10-26T13:10:00",
+        "text": "Resident slipped from wheelchair onto floor in activity room at 13:00.",
+        "gold_cluster_id": "INC_B03_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B03_S"
+      },
+      {
+        "note_id": "NB302",
+        "timestamp": "2026-10-26T13:40:00",
+        "text": "Post-fall assessment completed for wheelchair slide at 13:00. No injuries noted.",
+        "gold_cluster_id": "INC_B03_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B03_S"
+      },
+      {
+        "note_id": "NB303",
+        "timestamp": "2026-10-26T18:00:00",
+        "text": "Second fall today: Resident found on floor beside bathroom at 17:45. Immediate assistance given.",
+        "gold_cluster_id": "INC_B03_2",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B03_S"
+      },
+      {
+        "note_id": "NB304",
+        "timestamp": "2026-10-26T18:30:00",
+        "text": "Post-fall assessment initiated for 17:45 bathroom incident. Neuro checks stable.",
+        "gold_cluster_id": "INC_B03_2",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_B03_S"
+      }
+    ],
+    "resident_id": "RES_TC_B03_S"
+  },
+  {
+    "case_id": "TC_C01_PREVENTATIVE_PLANS_AND_HISTORY",
+    "case_family": "C_Historical_And_Negated",
+    "description": "Explicit negation and historical fall risks without any new incident.",
+    "notes": [
+      {
+        "note_id": "NC101",
+        "timestamp": "2026-10-27T08:00:00",
+        "text": "Resident has a history of falls prior to admission. High fall risk identified on Morse scale.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C01_P"
+      },
+      {
+        "note_id": "NC102",
+        "timestamp": "2026-10-27T09:00:00",
+        "text": "Fall precautions implemented: non-skid socks provided, low bed positioned, call light in reach.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C01_P"
+      },
+      {
+        "note_id": "NC103",
+        "timestamp": "2026-10-27T20:00:00",
+        "text": "Resident denies any falls or near-misses during shift. Ambulated with 1-person assist without incident.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C01_P"
+      }
+    ],
+    "resident_id": "RES_TC_C01_P"
+  },
+  {
+    "case_id": "TC_C02_HISTORICAL_CONFUSION_WITH_ACTIVE_FALL",
+    "case_family": "C_Historical_And_Negated",
+    "description": "Resident with documented fall history and denial, who later suffers a genuine active fall at 21:00.",
+    "notes": [
+      {
+        "note_id": "NC201",
+        "timestamp": "2026-10-28T07:30:00",
+        "text": "Shift report: Resident slept soundly. Denies overnight falls or pain.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C02_H"
+      },
+      {
+        "note_id": "NC202",
+        "timestamp": "2026-10-28T14:00:00",
+        "text": "Physical therapy note: Patient has chronic history of frequent falls at home. Fall risk care plan reviewed.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C02_H"
+      },
+      {
+        "note_id": "NC203",
+        "timestamp": "2026-10-28T21:15:00",
+        "text": "Resident fell in bedroom at approx 21:00 while attempting unassisted transfer to commode.",
+        "gold_cluster_id": "INC_C02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_C02_H"
+      },
+      {
+        "note_id": "NC204",
+        "timestamp": "2026-10-28T21:40:00",
+        "text": "Post-fall assessment completed for 21:00 commode fall. Pain rated 2/10 in right hip.",
+        "gold_cluster_id": "INC_C02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_C02_H"
+      }
+    ],
+    "resident_id": "RES_TC_C02_H"
+  },
+  {
+    "case_id": "TC_C03_RULED_OUT_FALL_UNCERTAIN_SLIP",
+    "case_family": "C_Historical_And_Negated",
+    "description": "Controlled descent vs fall where fall was clinically ruled out.",
+    "notes": [
+      {
+        "note_id": "NC301",
+        "timestamp": "2026-10-29T11:00:00",
+        "text": "Resident found sitting on floor in hallway. States she felt dizzy and intentionally lowered herself to carpet.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C03_R"
+      },
+      {
+        "note_id": "NC302",
+        "timestamp": "2026-10-29T11:30:00",
+        "text": "RN evaluation: Controlled lower to floor by resident, no loss of consciousness. Fall ruled out after assessment.",
+        "gold_cluster_id": null,
+        "gold_is_incident": false,
+        "resident_id": "RES_TC_C03_R"
+      }
+    ],
+    "resident_id": "RES_TC_C03_R"
+  },
+  {
+    "case_id": "TC_D01_LOCATION_AND_WITNESS_AMENDMENT",
+    "case_family": "D_Contradictory_Notes",
+    "description": "Initial note reports unwitnessed bedside fall, amended later by nurse clarifying true location and witnessed slip.",
+    "notes": [
+      {
+        "note_id": "ND101",
+        "timestamp": "2026-10-30T01:45:00",
+        "text": "Resident found on floor beside bed at 01:30. Stated they slipped while reaching for eyeglasses.",
+        "gold_cluster_id": "INC_D01",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D01_L"
+      },
+      {
+        "note_id": "ND102",
+        "timestamp": "2026-10-30T02:15:00",
+        "text": "Late entry / Correction: Resident was found in hallway bathroom, not bedside. Slip was observed by aide.",
+        "gold_cluster_id": "INC_D01",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D01_L"
+      },
+      {
+        "note_id": "ND103",
+        "timestamp": "2026-10-30T02:40:00",
+        "text": "Post-fall assessment completed for corrected 01:30 bathroom slip. No injury detected.",
+        "gold_cluster_id": "INC_D01",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D01_L"
+      }
+    ],
+    "resident_id": "RES_TC_D01_L"
+  },
+  {
+    "case_id": "TC_D02_TIME_DISCREPANCY_OVERNIGHT",
+    "case_family": "D_Contradictory_Notes",
+    "description": "Staff disagree on exact timing of fall (04:00 vs 05:15) but refer to identical overnight occurrence.",
+    "notes": [
+      {
+        "note_id": "ND201",
+        "timestamp": "2026-10-31T05:30:00",
+        "text": "Resident fell beside wardrobe at approximately 04:00. Call light placed.",
+        "gold_cluster_id": "INC_D02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D02_T"
+      },
+      {
+        "note_id": "ND202",
+        "timestamp": "2026-10-31T06:00:00",
+        "text": "Addendum to prior note: Incident occurred at approx 05:15, not 04:00. Vitals taken immediately.",
+        "gold_cluster_id": "INC_D02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D02_T"
+      },
+      {
+        "note_id": "ND203",
+        "timestamp": "2026-10-31T06:30:00",
+        "text": "Post-fall assessment completed for overnight wardrobe incident. Alert and oriented.",
+        "gold_cluster_id": "INC_D02",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_D02_T"
+      }
+    ],
+    "resident_id": "RES_TC_D02_T"
+  },
+  {
+    "case_id": "TC_E01_COMPLIANT_TIMELY_ASSESSMENT",
+    "case_family": "E_Follow_Up_Evidence",
+    "description": "Compliant post-fall assessment documented within 30 minutes with detailed clinical exam.",
+    "notes": [
+      {
+        "note_id": "NE101",
+        "timestamp": "2026-11-01T10:15:00",
+        "text": "Resident tripped over door threshold and fell in dining foyer at 10:00.",
+        "gold_cluster_id": "INC_E01",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_E01_C"
+      },
+      {
+        "note_id": "NE102",
+        "timestamp": "2026-11-01T10:25:00",
+        "text": "Post-fall assessment completed: vitals stable, bilateral pupils PERRLA, skin intact, zero head trauma.",
+        "gold_cluster_id": "INC_E01",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_E01_C"
+      }
+    ],
+    "resident_id": "RES_TC_E01_C"
+  },
+  {
+    "case_id": "TC_E03_CROSS_INCIDENT_EVIDENCE_MISASSOCIATION",
+    "case_family": "E_Follow_Up_Evidence",
+    "description": "Two falls in one day where only Incident 1 has post-fall assessment, Incident 2 lacks it.",
+    "notes": [
+      {
+        "note_id": "NE301",
+        "timestamp": "2026-11-03T08:15:00",
+        "text": "Incident 1: Resident fell in room at 08:00.",
+        "gold_cluster_id": "INC_E03_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_E03_C"
+      },
+      {
+        "note_id": "NE302",
+        "timestamp": "2026-11-03T08:45:00",
+        "text": "Post-fall assessment completed for 08:00 morning fall. Vitals WNL.",
+        "gold_cluster_id": "INC_E03_1",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_E03_C"
+      },
+      {
+        "note_id": "NE303",
+        "timestamp": "2026-11-03T19:30:00",
+        "text": "Incident 2: Resident found on floor beside nurse station at 19:15. Staff helped resident up.",
+        "gold_cluster_id": "INC_E03_2",
+        "gold_is_incident": true,
+        "resident_id": "RES_TC_E03_C"
+      }
+    ],
+    "resident_id": "RES_TC_E03_C"
+  }
+]
